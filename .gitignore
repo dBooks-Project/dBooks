@@ -57,3 +57,11 @@ typings/
 # dotenv environment variables file
 .env
 
+#react
+# testing
+/coverage
+
+# production
+/build
+
+
