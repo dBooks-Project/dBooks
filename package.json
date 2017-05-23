@@ -3,17 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "serve-favicon": "^2.4.3"
   },
   "devDependencies": {
+    "nodemon": "^1.11.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "nodemon ./app.js"
   },
   "description": "Une bibliothèque virtuelle pour le partage de livres",
   "main": "none",
