@@ -11,7 +11,7 @@ app.use(compression());
 //app.use(favicon(path.join(__dirname, 'build','favicon.ico')));
 
 //contenu statique
-app.use("/static", express.static(path.join(__dirname, '/dist/static')));
+app.use("/dist", express.static(path.join(__dirname, '/dist')));
 
 //envoyer "index.html" à toutes les pages demandées
 app.get('/*', function (req, res) {
