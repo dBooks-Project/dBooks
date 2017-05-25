@@ -8,14 +8,14 @@ const app = express();
 app.use(compression());
 
 //favicon
-app.use(favicon(path.join(__dirname, 'build','favicon.ico')));
+//app.use(favicon(path.join(__dirname, 'build','favicon.ico')));
 
 //contenu statique
-app.use("/static", express.static(path.join(__dirname, '/build/static')));
+app.use("/static", express.static(path.join(__dirname, '/dist/static')));
 
 //envoyer "index.html" à toutes les pages demandées
 app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 //port
